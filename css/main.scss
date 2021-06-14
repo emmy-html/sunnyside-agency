@@ -97,7 +97,7 @@
   h1, h2, h3, h4 {
       font-family: $heading-font;
   }
-  /* header */ 
+  /* header & responsive menu */ 
   header {
       background: url('../images/mobile/image-header.jpg') center / cover;
       height: 540px;
@@ -183,6 +183,21 @@
   }
   #menu-toggle-button {
     z-index: 999; /* make sure the menu button stays on top */
+  }
+  /* hero section */
+  header .hero-text {
+    text-align: center;
+      h1 {
+          color: $white;
+          font-weight: $black;
+          letter-spacing: .3rem;
+          margin: 0px 34px;
+          padding-top: 105px;
+          text-transform: uppercase;
+      }
+      img {
+          padding-top: 60px;
+      }
   }
   /* media queries for displaying our menu properly on large screens, change min-width to 768px for normal function */ 
   @media screen and (min-width: 1600px) {
