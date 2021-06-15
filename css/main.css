@@ -304,8 +304,8 @@ header .hero-text {
   padding: 70px 0px 90px 0px; }
   #testimonials h3 {
     color: #a7abae;
-    font-size: .95rem;
-    letter-spacing: .2rem;
+    font-size: 0.95rem;
+    letter-spacing: 0.2rem;
     text-align: center;
     text-transform: uppercase; }
   #testimonials article .content-wrapper {
@@ -320,12 +320,12 @@ header .hero-text {
       object-fit: cover;
       margin: 60px 0px 40px 0px; }
     #testimonials article .content-wrapper p {
-      font-size: .95rem; }
+      font-size: 0.95rem; }
     #testimonials article .content-wrapper h4 span {
       color: #a7abae;
       display: block;
       font-family: "Barlow", sans-serif;
-      font-size: .85rem;
+      font-size: 0.85rem;
       font-weight: 400;
       padding-top: 15px; }
 
@@ -354,6 +354,10 @@ footer {
   flex-direction: column;
   align-items: center;
   padding: 70px 0px 75px 0px; }
+  footer a:link:hover,
+  footer a:visited:hover {
+    color: white;
+    transition: 0.3s all; }
   footer ul {
     list-style-type: none;
     display: flex;
@@ -372,16 +376,25 @@ footer {
     align-items: center;
     padding-bottom: 40px;
     width: 70%; }
+    footer .footer-social-media .icon {
+      fill: #2c7566; }
+      footer .footer-social-media .icon:hover {
+        fill: white;
+        transition: .3s all; }
   footer .attribution {
     color: #25564b;
     font-family: "Fraunces", serif;
-    font-size: .75rem;
+    font-size: 0.75rem;
     text-align: center;
     text-transform: uppercase; }
     footer .attribution a:link,
     footer .attribution a:visited {
       color: black;
       text-decoration: none; }
+      footer .attribution a:link:hover,
+      footer .attribution a:visited:hover {
+        border-bottom: 4px solid #25564b;
+        transition: 0s all; }
 
 /* desktop styles */
 @media screen and (min-width: 1200px) {
@@ -390,7 +403,7 @@ footer {
     height: 800px; }
     header .hero-text h1 {
       font-size: 3rem;
-      letter-spacing: .6rem;
+      letter-spacing: 0.6rem;
       padding-top: 135px; }
     header .hero-text img {
       padding-top: 110px; }
@@ -413,7 +426,7 @@ footer {
     /* reset width */
     top: 0; }
     nav::before {
-      content: ' ';
+      content: " ";
       border: none; }
 
   nav ul li {
@@ -431,7 +444,7 @@ footer {
     nav ul li.contact-button a:visited:hover {
       color: white;
       background: rgba(255, 255, 255, 0.25) !important;
-      transition: .3s all; }
+      transition: 0.3s all; }
 
   /* brand info */
   #brand-info {
@@ -551,7 +564,13 @@ footer {
       #gallery-images aside:nth-of-type(3) {
         background-image: url("../images/desktop/image-gallery-cone.jpg"); }
       #gallery-images aside:nth-of-type(4) {
-        background-image: url("../images/desktop/image-gallery-sugarcubes.jpg"); } }
+        background-image: url("../images/desktop/image-gallery-sugarcubes.jpg"); }
+
+  /* footer */
+  footer ul {
+    width: 21%; }
+  footer .footer-social-media {
+    width: 11%; } }
 /* ==========================================================================
      Helper classes
      ========================================================================== */
