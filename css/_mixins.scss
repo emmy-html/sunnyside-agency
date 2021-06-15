@@ -1,4 +1,4 @@
-@mixin mobile-brand-info($bg-image, $border-color) {
+@mixin mobile-brand-info($bg-image, $border-color, $border-hover) {
   text-align: center;
   aside:nth-of-type(1) {
     background: url($bg-image) center / cover;
@@ -35,6 +35,10 @@
       text-transform: uppercase;
       width: 110px;
       margin: 0 auto !important;
+      &:hover {
+        border-bottom: 6px solid $border-hover;
+        transition: .3s all;
+      }
     }
   }
 }
@@ -52,5 +56,56 @@
       font-size: 0.8rem;
       font-weight: $semi-bold;
       padding-bottom: 60px;
+    }
+}
+@mixin desktop-brand-info($bg-image) {
+    text-align: left;
+    aside:nth-of-type(1) {
+      background: url($bg-image) center / cover !important;
+      width: 50%;
+      height: 600px;
+    }
+    aside:nth-of-type(2) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 50%;
+      height: 600px;
+      .content-wrapper {
+          margin: 0px 160px 0px 115px;
+      }
+      h2 {
+        font-weight: $black;
+        font-size: 2.5rem;
+        margin: 0px !important;
+      }
+      p {
+        color: $very-dark-grayish-blue;
+        font-size: 1.1rem;
+        line-height: 1.75rem;
+        margin: 40px 0px;
+      }
+      a:link,
+      a:visited {
+        width: 110px;
+        margin: 0 !important;
+      }
+    }
+  }
+  @mixin desktop-brand-services($bg-image) {
+    background: url($bg-image) center / cover !important;
+    width: 50%;
+    height: 600px !important;
+    h2 {
+        font-size: 1.75rem;
+      font-weight: $black;
+    }
+    p {
+      font-size: 1rem !important;
+      line-height: 1.75rem;
+      font-weight: $semi-bold;
+      padding-bottom: 60px;
+      width: 330px;
+      margin: 0 auto;
     }
 }

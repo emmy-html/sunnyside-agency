@@ -193,7 +193,7 @@ header .hero-text {
 #brand-info {
   /* transform your brand */
   /* stand out to the right audience */
-  /* graphic design */ }
+  /* brand services */ }
   #brand-info article:nth-of-type(1) {
     text-align: center; }
     #brand-info article:nth-of-type(1) aside:nth-of-type(1) {
@@ -228,6 +228,10 @@ header .hero-text {
         text-transform: uppercase;
         width: 110px;
         margin: 0 auto !important; }
+        #brand-info article:nth-of-type(1) aside:nth-of-type(2) a:link:hover,
+        #brand-info article:nth-of-type(1) aside:nth-of-type(2) a:visited:hover {
+          border-bottom: 6px solid #fad400;
+          transition: .3s all; }
   #brand-info article:nth-of-type(2) {
     text-align: center; }
     #brand-info article:nth-of-type(2) aside:nth-of-type(1) {
@@ -262,6 +266,10 @@ header .hero-text {
         text-transform: uppercase;
         width: 110px;
         margin: 0 auto !important; }
+        #brand-info article:nth-of-type(2) aside:nth-of-type(2) a:link:hover,
+        #brand-info article:nth-of-type(2) aside:nth-of-type(2) a:visited:hover {
+          border-bottom: 6px solid #fe7867;
+          transition: .3s all; }
   #brand-info article:nth-of-type(3) {
     text-align: center; }
     #brand-info article:nth-of-type(3) aside:nth-of-type(1) {
@@ -412,7 +420,104 @@ footer {
     nav ul li.contact-button a:visited:hover {
       color: white;
       background: rgba(255, 255, 255, 0.25) !important;
-      transition: .3s all; } }
+      transition: .3s all; }
+
+  /* brand info */
+  #brand-info {
+    /* transform your brand */
+    /* stand out to the right audience */ }
+    #brand-info article:nth-of-type(1) {
+      display: flex;
+      flex-flow: row-reverse nowrap;
+      text-align: left; }
+      #brand-info article:nth-of-type(1) aside:nth-of-type(1) {
+        background: url("../images/desktop/image-transform.jpg") center/cover !important;
+        width: 50%;
+        height: 600px; }
+      #brand-info article:nth-of-type(1) aside:nth-of-type(2) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 50%;
+        height: 600px; }
+        #brand-info article:nth-of-type(1) aside:nth-of-type(2) .content-wrapper {
+          margin: 0px 160px 0px 115px; }
+        #brand-info article:nth-of-type(1) aside:nth-of-type(2) h2 {
+          font-weight: 900;
+          font-size: 2.5rem;
+          margin: 0px !important; }
+        #brand-info article:nth-of-type(1) aside:nth-of-type(2) p {
+          color: #5a636c;
+          font-size: 1.1rem;
+          line-height: 1.75rem;
+          margin: 40px 0px; }
+        #brand-info article:nth-of-type(1) aside:nth-of-type(2) a:link,
+        #brand-info article:nth-of-type(1) aside:nth-of-type(2) a:visited {
+          width: 110px;
+          margin: 0 !important; }
+    #brand-info article:nth-of-type(2) {
+      display: flex;
+      flex-flow: row nowrap;
+      text-align: left; }
+      #brand-info article:nth-of-type(2) aside:nth-of-type(1) {
+        background: url("../images/mobile/image-stand-out.jpg") center/cover !important;
+        width: 50%;
+        height: 600px; }
+      #brand-info article:nth-of-type(2) aside:nth-of-type(2) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 50%;
+        height: 600px; }
+        #brand-info article:nth-of-type(2) aside:nth-of-type(2) .content-wrapper {
+          margin: 0px 160px 0px 115px; }
+        #brand-info article:nth-of-type(2) aside:nth-of-type(2) h2 {
+          font-weight: 900;
+          font-size: 2.5rem;
+          margin: 0px !important; }
+        #brand-info article:nth-of-type(2) aside:nth-of-type(2) p {
+          color: #5a636c;
+          font-size: 1.1rem;
+          line-height: 1.75rem;
+          margin: 40px 0px; }
+        #brand-info article:nth-of-type(2) aside:nth-of-type(2) a:link,
+        #brand-info article:nth-of-type(2) aside:nth-of-type(2) a:visited {
+          width: 110px;
+          margin: 0 !important; }
+
+  /* brand services */
+  article:nth-of-type(3) {
+    display: flex;
+    flex-flow: row nowrap;
+    text-align: center; }
+    article:nth-of-type(3) aside:nth-of-type(1) {
+      background: url("../images/desktop/image-graphic-design.jpg") center/cover !important;
+      width: 50%;
+      height: 600px !important; }
+      article:nth-of-type(3) aside:nth-of-type(1) h2 {
+        font-size: 1.75rem;
+        font-weight: 900; }
+      article:nth-of-type(3) aside:nth-of-type(1) p {
+        font-size: 1rem !important;
+        line-height: 1.75rem;
+        font-weight: 600;
+        padding-bottom: 60px;
+        width: 330px;
+        margin: 0 auto; }
+    article:nth-of-type(3) aside:nth-of-type(2) {
+      background: url("../images/desktop/image-photography.jpg") center/cover !important;
+      width: 50%;
+      height: 600px !important; }
+      article:nth-of-type(3) aside:nth-of-type(2) h2 {
+        font-size: 1.75rem;
+        font-weight: 900; }
+      article:nth-of-type(3) aside:nth-of-type(2) p {
+        font-size: 1rem !important;
+        line-height: 1.75rem;
+        font-weight: 600;
+        padding-bottom: 60px;
+        width: 330px;
+        margin: 0 auto; } }
 /* ==========================================================================
      Helper classes
      ========================================================================== */
