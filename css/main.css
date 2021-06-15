@@ -364,8 +364,19 @@ footer {
       color: black;
       text-decoration: none; }
 
-/* media queries for displaying our menu properly on large screens, change min-width to 768px for normal function */
-@media screen and (min-width: 1600px) {
+/* desktop styles */
+@media screen and (min-width: 1200px) {
+  header {
+    background: url("../images/desktop/image-header.jpg") center/cover;
+    height: 800px; }
+    header .hero-text h1 {
+      font-size: 3rem;
+      letter-spacing: .6rem;
+      padding-top: 135px; }
+    header .hero-text img {
+      padding-top: 110px; }
+
+  /* responsive menu styles */
   .hide-menu {
     display: block !important;
     /* override hidden navigation on large screens */ }
@@ -375,17 +386,33 @@ footer {
     /* hide hamburger button */ }
 
   nav {
+    background: none;
     left: auto;
     right: 20px;
     /* use absolute positioning to push links to right side of container */
     width: auto;
-    /* reset width */ }
+    /* reset width */
+    top: 0; }
+    nav::before {
+      content: ' ';
+      border: none; }
 
   nav ul li {
     display: inline-block;
     /* display links side by side */
-    margin-left: 20px; } }
-/* desktop styles */
+    margin-left: 50px; }
+    nav ul li a:link,
+    nav ul li a:visited {
+      color: white; }
+  nav ul li.contact-button a:link,
+  nav ul li.contact-button a:visited {
+    background: white !important;
+    color: black; }
+    nav ul li.contact-button a:link:hover,
+    nav ul li.contact-button a:visited:hover {
+      color: white;
+      background: rgba(255, 255, 255, 0.25) !important;
+      transition: .3s all; } }
 /* ==========================================================================
      Helper classes
      ========================================================================== */

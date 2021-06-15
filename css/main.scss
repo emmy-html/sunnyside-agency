@@ -318,8 +318,23 @@ footer {
         }
     }
 }
-/* media queries for displaying our menu properly on large screens, change min-width to 768px for normal function */
-@media screen and (min-width: 1600px) {
+/* desktop styles */
+@media screen and (min-width: 1200px) {
+    header {
+        background: url('../images/desktop/image-header.jpg') center / cover;
+        height: 800px;
+        .hero-text {
+            h1 {
+                font-size: 3rem;
+                letter-spacing: .6rem;
+                padding-top: 135px;
+            }
+            img {
+                padding-top: 110px;
+            }
+        }
+    }
+    /* responsive menu styles */
   .hide-menu {
     display: block !important; /* override hidden navigation on large screens */
   }
@@ -327,17 +342,40 @@ footer {
     display: none; /* hide hamburger button */
   }
   nav {
+    background: none;
     left: auto;
     right: 20px; /* use absolute positioning to push links to right side of container */
     width: auto; /* reset width */
+    top: 0;
+    &::before {
+        content: ' ';
+        border: none;
+    }
   }
-  nav ul li {
-    display: inline-block; /* display links side by side */
-    margin-left: 20px;
+  nav {
+      ul {
+          li {
+            display: inline-block; /* display links side by side */
+            margin-left: 50px;
+            a:link,
+            a:visited {
+                color: $white;
+            }
+          }
+          li.contact-button {
+            a:link,
+            a:visited {
+                background: $white !important;
+                color: black;
+                &:hover {
+                    color: $white;
+                    background: rgba(255, 255, 255, 0.25) !important;
+                    transition: .3s all;
+                }
+            }
+        }
+      }
   }
-}
-/* desktop styles */
-@media screen and (min-width: 768px) {
 }
 
 /* ==========================================================================
