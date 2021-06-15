@@ -407,6 +407,17 @@ footer {
             @include desktop-brand-services("../images/desktop/image-photography.jpg");
         }
       }
+      /* testimonials */ 
+      #testimonials {
+          .testimonials-container {
+              display: flex;
+              flex-flow: row nowrap;
+              justify-content: center;
+              article {
+                  width: 24%;
+              }
+          }
+      }
 }
 
 /* ==========================================================================

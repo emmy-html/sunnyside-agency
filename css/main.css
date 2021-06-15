@@ -517,7 +517,15 @@ footer {
         font-weight: 600;
         padding-bottom: 60px;
         width: 330px;
-        margin: 0 auto; } }
+        margin: 0 auto; }
+
+  /* testimonials */
+  #testimonials .testimonials-container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center; }
+    #testimonials .testimonials-container article {
+      width: 24%; } }
 /* ==========================================================================
      Helper classes
      ========================================================================== */
