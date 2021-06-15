@@ -267,7 +267,14 @@ header .hero-text {
         }
     }
 }
-
+/* gallery images */ 
+#gallery-images {
+    display: flex;
+    flex-flow: row wrap;
+    img {
+        width: 50%;
+    }
+}
 /* media queries for displaying our menu properly on large screens, change min-width to 768px for normal function */
 @media screen and (min-width: 1600px) {
   .hide-menu {
