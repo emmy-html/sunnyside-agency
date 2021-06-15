@@ -232,11 +232,11 @@ header .hero-text {
 }
 /* client testimonials */ 
 #testimonials {
+    padding: 70px 0px 90px 0px;
     h3 {
         color: $gray-blue;
         font-size: .95rem;
         letter-spacing: .2rem;
-        padding-top: 70px;
         text-align: center;
         text-transform: uppercase;
     }
@@ -273,6 +273,49 @@ header .hero-text {
     flex-flow: row wrap;
     img {
         width: 50%;
+    }
+}
+/* footer */ 
+footer {
+    background: $light-green;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px 0px 75px 0px;
+    ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-around;
+        margin: 0px !important;
+        padding: 40px 0px 70px 0px !important;
+        width: 90%;
+        li {
+            a:link,
+            a:visited {
+                color: $dark-cyan;
+                text-decoration: none;
+            }
+        }
+    }
+    .footer-social-media {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        align-items: center;
+        padding-bottom: 40px;
+        width: 70%;
+    }
+    .attribution {
+        color: $dark-cyan;
+        font-family: $heading-font;
+        font-size: .75rem;
+        text-align: center;
+        text-transform: uppercase;
+        a:link,
+        a:visited {
+            color: black;
+            text-decoration: none;
+        }
     }
 }
 /* media queries for displaying our menu properly on large screens, change min-width to 768px for normal function */
