@@ -191,7 +191,9 @@ header .hero-text {
 
 /* brand info */
 #brand-info {
-  /* transform your brand */ }
+  /* transform your brand */
+  /* stand out to the right audience */
+  /* graphic design */ }
   #brand-info article:nth-of-type(1) {
     text-align: center; }
     #brand-info article:nth-of-type(1) aside:nth-of-type(1) {
@@ -219,8 +221,8 @@ header .hero-text {
         display: block;
         font-family: "Fraunces", serif;
         font-size: 0.8rem;
-        letter-spacing: .05rem;
-        line-height: .2rem !important;
+        letter-spacing: 0.05rem;
+        line-height: 0.2rem !important;
         text-align: center;
         text-decoration: none;
         text-transform: uppercase;
@@ -253,13 +255,41 @@ header .hero-text {
         display: block;
         font-family: "Fraunces", serif;
         font-size: 0.8rem;
-        letter-spacing: .05rem;
-        line-height: .2rem !important;
+        letter-spacing: 0.05rem;
+        line-height: 0.2rem !important;
         text-align: center;
         text-decoration: none;
         text-transform: uppercase;
         width: 110px;
         margin: 0 auto !important; }
+  #brand-info article:nth-of-type(3) {
+    text-align: center; }
+    #brand-info article:nth-of-type(3) aside:nth-of-type(1) {
+      background: url("../images/mobile/image-graphic-design.jpg") center/cover;
+      color: #25564b;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      height: 600px; }
+      #brand-info article:nth-of-type(3) aside:nth-of-type(1) h2 {
+        font-weight: 900; }
+      #brand-info article:nth-of-type(3) aside:nth-of-type(1) p {
+        font-size: 0.8rem;
+        font-weight: 600;
+        padding-bottom: 60px; }
+    #brand-info article:nth-of-type(3) aside:nth-of-type(2) {
+      background: url("../images/mobile/image-photography.jpg") center/cover;
+      color: #19536b;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      height: 600px; }
+      #brand-info article:nth-of-type(3) aside:nth-of-type(2) h2 {
+        font-weight: 900; }
+      #brand-info article:nth-of-type(3) aside:nth-of-type(2) p {
+        font-size: 0.8rem;
+        font-weight: 600;
+        padding-bottom: 60px; }
 
 /* media queries for displaying our menu properly on large screens, change min-width to 768px for normal function */
 @media screen and (min-width: 1600px) {
